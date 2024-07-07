@@ -6,8 +6,9 @@ def turn_right():
  turn_left()
  turn_left()    
 
-while front_is_clear():
+while front_is_clear(): #doing this will make sure there is a wall on the right
  move()
+turn_left() 
 
 while not at_goal():
  if right_is_clear():
